@@ -1,0 +1,169 @@
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+.mainbody
+{
+  background: linear-gradient(112deg, rgba(189,220,241,1) 35%, rgba(253,248,109,1) 100%);
+  font-family: 'JetBrains Mono', monospace;
+}
+#maintable
+{
+  padding-top: 50px;
+}
+.heading
+{
+
+}
+/*Css for preloader*/
+#preloader
+{
+  background: #fff url("images/load.GIF") no-repeat center center;
+  background-size: 30%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+/* CSS for popover */
+.popover-header {
+  padding: var(--bs-popover-header-padding-y) var(--bs-popover-header-padding-x);
+  margin-bottom: 0;
+  font-size: var(--bs-popover-header-font-size);
+  color: white !important;
+  background-color: blueviolet !important;
+  border-bottom: var(--bs-popover-border-width) solid var(--bs-popover-border-color);
+  border-top-left-radius: var(--bs-popover-inner-border-radius);
+  border-top-right-radius: var(--bs-popover-inner-border-radius);
+}
+.tooltip-header
+{
+  background-color: blueviolet!important;
+}
+
+#Deletebtn
+{
+  background-color: red;
+}
+/*css for landingpage*/
+#landingpage
+{
+ 
+}
+/*CSS for Landing Page Right side*/
+#right
+{
+  padding: 14% 2% 0% 2%;
+  color: #414A4C;
+  font-family: 'DynaPuff', cursive;
+  text-align: center;
+}
+/*css for table*/
+#maintable
+{
+ padding-top: 20%;
+ padding-bottom: 20%;
+}
+.user_icon
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  display: inline-flex;
+  margin-top: 8px;
+}
+.imgtxt
+{
+  display: inline-flex;
+}
+.inlineflex
+{
+  display: inline-flex;
+  margin-top: 16px;
+}
+.actionbtn
+{
+  margin-top: 10px;
+  display: inline-flex;
+  background-color: lightgray;
+}
+.page-link
+{
+  color: yellow;
+}
+
+
+
+/*scrollspy*/
+#scrollspyHeading1
+{
+  padding-bottom: 10px;
+}
+#intra
+{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+/* css for progressbar */
+#progressbar
+{
+  padding-bottom: 10%;
+}
+.barsl, .barsr
+{
+  background-color: white;
+  margin: 10px 0px 30px 0px;
+  padding: 10px 5px 10px 5px;
+}
+.progressbarhead
+{
+  margin-bottom: 5px;
+}
+.barsr
+{
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.barsl
+{
+  border-radius: 30px;
+}
+
+/*CSS FOR SIDE BAR*/
+.canvasbtn, .btn-primary
+{
+  background-color: transparent !important;
+  border-color: green;
+}
+.canvas2
+{
+  text-decoration: none;
+  color: gray;
+}
+.bar
+{
+  font-size: 30px;
+  color: gray;
+}
+.logo
+{
+  left: 7%;
+position: absolute;
+top: 7px;
+}
+.maincanvas
+{
+  width: 20%;
+}
+.link
+{
+  margin-bottom: 4%;
+}
+#offcanvasExample
+{
+  width: 280px;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task3</title>
+	<link rel="stylesheet" type="text/css" href="assets/style/style.css">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<!-- link files for Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+<!-- Css for table fetch from internet-->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--script for fontawosme-->
+<script src="https://kit.fontawesome.com/155ad7575b.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="mainbody">
+    <div id="preloader">        
+    </div>
+	<div class="container-fluid">
+    <nav id="navbar" class="navbar px-3 mb-3 shadow-lg rounded-2" >
+    <!--side bar-->
+        <button class="btn btn-primary canvasbtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                     <i class="fa-solid fa-bars-progress bar"></i>
+    </button>
+    
+    <div class="offcanvas offcanvas-start maincanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <img src="assets/images/logo.jpg" width="50px" height="50px"><h5 class="offcanvas-title" id="offcanvasExampleLabel">Live Market</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body canvas1">
+        <div class="">
+            <div class="link"><a class="canvas2" href="#scrollspyHeading1">Our Clients</a></div>
+            <div class="link"><a class="canvas2" href="#scrollspyHeading2">Intraday Trading</a></div>
+            <div class="link"><a class="canvas2" href="#scrollspyHeading2">Support</a></div>
+        </div>
+      </div>
+    </div>
+   <!--EOF of SIDEBAR--> 
+  <a class="navbar-brand" href="#scrollspyHeading0"><img class="logo" src="assets/images/logo.jpg" width="50px" height="50px"></a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading1">Our Clients</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading2">Intraday Trading</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Support</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#scrollspyHeading3">Get Email Support</a></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading4">Get Call Back</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2" tabindex="0">
+<div class="row" id="landingpage">
+  <div class="col-md-6" id="left">
+    <img src="assets/images/intraday.jpg" width="650px" height="500px">
+  </div>
+  <div class="col-md-6" id="right">
+      <h1>A Definite Guide to starting Intraday Trading for Beginners in India</h1>
+  </div>
+</div>
+
+<div class="container" id="maintable">
+  <h2 id="scrollspyHeading1" class="heading">Our Top Clients</h2>
+  <table id="sakthitable" class="table table-striped table-hover" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Years</th>
+                                <th>Clients Name</th>
+                                <th>E-mail</th>
+                                <th>Status</th>
+                                <th>NetWorth</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <div class="tablerows">
+                                        <img class="user_icon" src="assets/images/Table images/jio.jpg" alt="">
+                                        <span class="imgtxt">Mukesh Ambani</span>
+                                    </div>
+
+                                    </td>
+                                <td>
+                                    <span class="inlineflex mail" data-bs-toggle="popover" data-bs-placement="right"
+                                          data-bs-custom-class="custom-popover"
+                                          data-bs-title="User Aggrement"
+                                          data-bs-content="We do not send spam mails...">
+                                           ambani@gmail.com
+                                    </span>
+                                </td>
+                                <td><span class="inlineflex status"><span><div class="spinner-grow spinner-grow-sm text-success"></div></span>Active</span></td>
+                                <td><span class="inlineflex networth">19,000 USD cr</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary actionbtn"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Only Admin Can Perform Actions">
+                                            Action
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <div class="tablerows">
+                                        <img class="user_icon" src="assets/images/Table images/adani.jpg" alt="">
+                                        <span class="imgtxt">Gowtham Adanai</span>
+                                    </div>
+
+                                    </td>
+                                <td>
+                                    <span class="inlineflex mail" data-bs-toggle="popover" data-bs-placement="right"
+                                          data-bs-custom-class="custom-popover"
+                                          data-bs-title="User Aggrement"
+                                          data-bs-content="We do not send spam mails...">
+                                           amdani@gmail.com
+                                    </span>
+                                </td>
+                                <td><span class="inlineflex status"><span><div class="spinner-grow spinner-grow-sm text-success" role="status"></div></span>Active</span></td>
+                                <td><span class="inlineflex networth">29,000 USD cr</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary actionbtn"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Only Admin Can Perform Actions">
+                                            Action
+                                    </button>
+                                </td>
+                            </tr><tr>
+                                <td>3</td>
+                                <td>
+                                    <div class="tablerows">
+                                        <img class="user_icon" src="assets/images/Table images/amazon.jpg" alt="">
+                                        <span class="imgtxt">Jef</span>
+                                    </div>
+
+                                    </td>
+                                <td>
+                                    <span class="inlineflex mail" data-bs-toggle="popover" data-bs-placement="right"
+                                          data-bs-custom-class="custom-popover"
+                                          data-bs-title="User Aggrement"
+                                          data-bs-content="We do not send spam mails...">
+                                           amazon@mail.com
+                                    </span>
+                                </td>
+                                <td><span class="inlineflex status"><span><div class="spinner-grow spinner-grow-sm text-success" role="status"></div></span>Active</span></td>
+                                <td><span class="inlineflex networth">1,000 USD cr</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary actionbtn"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Only Admin Can Perform Actions">
+                                            Action
+                                    </button>
+                                </td>
+                            </tr><tr>
+                                <td>4</td>
+                                <td>
+                                    <div class="tablerows">
+                                        <img class="user_icon" src="assets/images/Table images/billgates.jpg" alt="">
+                                        <span class="imgtxt">Bill Gates</span>
+                                    </div>
+
+                                    </td>
+                                <td>
+                                    <span class="inlineflex mail" data-bs-toggle="popover" data-bs-placement="right"
+                                          data-bs-custom-class="custom-popover"
+                                          data-bs-title="User Aggrement"
+                                          data-bs-content="We do not send spam mails...">
+                                           gates@mail.com
+                                    </span>
+                                </td>
+                                <td><span class="inlineflex status"><span><div class="spinner-grow spinner-grow-sm text-success" role="status"></div></span>Active</span></td>
+                                <td><span class="inlineflex networth">49,000 USD cr</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary actionbtn"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Only Admin Can Perform Actions">
+                                            Action
+                                    </button>
+                                </td>
+                            </tr><tr>
+                                <td>5</td>
+                                <td>
+                                    <div class="tablerows">
+                                        <img class="user_icon" src="assets/images/Table images/elon.jpg" alt="">
+                                        <span class="imgtxt">Elon musk</span>
+                                    </div>
+
+                                    </td>
+                                <td>
+                                    <span class="inlineflex mail" data-bs-toggle="popover" data-bs-placement="right"
+                                          data-bs-custom-class="custom-popover"
+                                          data-bs-title="User Aggrement"
+                                          data-bs-content="We do not send spam mails...">
+                                           spacex@mail.com
+                                    </span>
+                                </td>
+                                <td><span class="inlineflex status"><span><div class="spinner-grow spinner-grow-sm text-success" role="status"></div></span>Active</span></td>
+                                <td><span class="inlineflex networth">59,000 USD cr</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary actionbtn"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Only Admin Can Perform Actions">
+                                            Action
+                                    </button>
+                                </td>
+                            </tr><tr>
+                                <td>6</td>
+                                <td>
+                                    <div class="tablerows">
+                                        <img class="user_icon" src="assets/images/Table images/lalitha.jpg" alt="">
+                                        <span class="imgtxt">Kiran Kumar</span>
+                                    </div>
+
+                                    </td>
+                                <td>
+                                    <span class="inlineflex mail" data-bs-toggle="popover" data-bs-placement="right"
+                                          data-bs-custom-class="custom-popover"
+                                          data-bs-title="User Aggrement"
+                                          data-bs-content="We do not send spam mails...">
+                                           lalitha@mail.com
+                                    </span>
+                                </td>
+                                <td><span class="inlineflex status"><span><div class="spinner-grow spinner-grow-sm text-success" role="status"></div></span>Active</span></td>
+                                <td><span class="inlineflex networth">3,000 USD cr</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary actionbtn"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Only Admin Can Perform Actions">
+                                            Action
+                                    </button>
+                                </td>
+                            </tr><tr>
+                                <td>7</td>
+                                <td>
+                                    <div class="tablerows">
+                                        <img class="user_icon" src="assets/images/Table images/mark.jpg" alt="">
+                                        <span class="imgtxt">Mark Zukenberg</span>
+                                    </div>
+
+                                    </td>
+                                <td>
+                                    <span class="inlineflex mail" data-bs-toggle="popover" data-bs-placement="right"
+                                          data-bs-custom-class="custom-popover"
+                                          data-bs-title="User Aggrement"
+                                          data-bs-content="We do not send spam mails...">
+                                           facebook@mail.com
+                                    </span>
+                                </td>
+                                <td><span class="inlineflex status"><span><div class="spinner-grow spinner-grow-sm text-success" role="status"></div></span>Active</span></td>
+                                <td><span class="inlineflex networth">79,000 USD cr</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary actionbtn"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Only Admin Can Perform Actions">
+                                            Action
+                                    </button>
+                                </td>
+                            </tr><tr>
+                                <td>8</td>
+                                <td>
+                                    <div class="tablerows">
+                                        <img class="user_icon" src="assets/images/Table images/steve.jpg" alt="">
+                                        <span class="imgtxt">Stve Jobs</span>
+                                    </div>
+
+                                    </td>
+                                <td>
+                                    <span class="inlineflex mail" data-bs-toggle="popover" data-bs-placement="right"
+                                          data-bs-custom-class="custom-popover"
+                                          data-bs-title="User Aggrement"
+                                          data-bs-content="We do not send spam mails...">
+                                           apple@mail.com
+                                    </span>
+                                </td>
+                                <td><span class="inlineflex status"><span><div class="spinner-grow spinner-grow-sm text-danger" role="status"></div></span>In Active</span></td>
+                                <td><span class="inlineflex networth">19,000 USD cr</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary actionbtn"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Only Admin Can Perform Actions">
+                                            Action
+                                    </button>
+                                </td>
+                            </tr><tr>
+                                <td>9</td>
+                                <td>
+                                    <div class="tablerows">
+                                        <img class="user_icon" src="assets/images/Table images/tata.jpg" alt="">
+                                        <span class="imgtxt">Ratan Tata</span>
+                                    </div>
+
+                                    </td>
+                                <td>
+                                    <span class="inlineflex mail" data-bs-toggle="popover" data-bs-placement="right"
+                                          data-bs-custom-class="custom-popover"
+                                          data-bs-title="User Aggrement"
+                                          data-bs-content="We do not send spam mails...">
+                                           ambani@gmail.com
+                                    </span>
+                                </td>
+                                <td><span class="inlineflex status"><span><div class="spinner-grow spinner-grow-sm text-success" role="status"></div></span>Active</span></td>
+                                <td><span class="inlineflex networth">19,000 USD cr</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary actionbtn"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Only Admin Can Perform Actions">
+                                            Action
+                                    </button>
+                                </td>
+                            </tr><tr>
+                                <td>10</td>
+                                <td>
+                                    <div class="tablerows">
+                                        <img class="user_icon" src="assets/images/Table images/sata1.jpg" alt="">
+                                        <span class="imgtxt">Satya Nadella</span>
+                                    </div>
+
+                                    </td>
+                                <td>
+                                    <span class="inlineflex mail" data-bs-toggle="popover" data-bs-placement="right"
+                                          data-bs-custom-class="custom-popover"
+                                          data-bs-title="User Aggrement"
+                                          data-bs-content="We do not send spam mails...">
+                                           ambani@gmail.com
+                                    </span>
+                                </td>
+                                <td><span class="inlineflex status"><span><div class="spinner-grow spinner-grow-sm text-success" role="status"></div></span>Active</span></td>
+                                <td><span class="inlineflex networth">19,000 USD cr</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary actionbtn"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Only Admin Can Perform Actions">
+                                            Action
+                                    </button>
+                                </td>
+                            </tr><tr>
+                                <td>11</td>
+                                <td>
+                                    <div class="tablerows">
+                                        <img class="user_icon" src="assets/images/Table images/jio.jpg" alt="">
+                                        <span class="imgtxt">Mukesh Ambani</span>
+                                    </div>
+
+                                    </td>
+                                <td>
+                                    <span class="inlineflex mail" data-bs-toggle="popover" data-bs-placement="right"
+                                          data-bs-custom-class="custom-popover"
+                                          data-bs-title="User Aggrement"
+                                          data-bs-content="We do not send spam mails...">
+                                           ambani@gmail.com
+                                    </span>
+                                </td>
+                                <td><span class="inlineflex status"><span><div class="spinner-grow spinner-grow-sm text-success" role="status"></div></span>Active</span></td>
+                                <td><span class="inlineflex networth">19,000 USD cr</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary actionbtn"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Only Admin Can Perform Actions">
+                                            Action
+                                    </button>
+                                </td>
+                            </tr><tr>
+                                <td>12</td>
+                                <td>
+                                    <div class="tablerows">
+                                        <img class="user_icon" src="assets/images/Table images/jio.jpg" alt="">
+                                        <span class="imgtxt">Mukesh Ambani</span>
+                                    </div>
+
+                                    </td>
+                                <td>
+                                    <span class="inlineflex mail" data-bs-toggle="popover" data-bs-placement="right"
+                                          data-bs-custom-class="custom-popover"
+                                          data-bs-title="User Aggrement"
+                                          data-bs-content="We do not send spam mails...">
+                                           ambani@gmail.com
+                                    </span>
+                                </td>
+                                <td><span class="inlineflex status"><span><div class="spinner-grow spinner-grow-sm text-success" role="status"></div></span>Active</span></td>
+                                <td><span class="inlineflex networth">19,000 USD cr</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary actionbtn"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Only Admin Can Perform Actions">
+                                            Action
+                                    </button>
+                                </td>
+                            </tr><tr>
+                                <td>13</td>
+                                <td>
+                                    <div class="tablerows">
+                                        <img class="user_icon" src="assets/images/Table images/jio.jpg" alt="">
+                                        <span class="imgtxt">Mukesh Ambani</span>
+                                    </div>
+
+                                    </td>
+                                <td>
+                                    <span class="inlineflex mail" data-bs-toggle="popover" data-bs-placement="right"
+                                          data-bs-custom-class="custom-popover"
+                                          data-bs-title="User Aggrement"
+                                          data-bs-content="We do not send spam mails...">
+                                           ambani@gmail.com
+                                    </span>
+                                </td>
+                                <td><span class="inlineflex status"><span><div class="spinner-grow spinner-grow-sm text-success" role="status"></div></span>Active</span></td>
+                                <td><span class="inlineflex networth">19,000 USD cr</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary actionbtn"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Only Admin Can Perform Actions">
+                                            Action
+                                    </button>
+                                </td>
+                            </tr><tr>
+                                <td>14</td>
+                                <td>
+                                    <div class="tablerows">
+                                        <img class="user_icon" src="assets/images/Table images/jio.jpg" alt="">
+                                        <span class="imgtxt">Mukesh Ambani</span>
+                                    </div>
+
+                                    </td>
+                                <td>
+                                    <span class="inlineflex mail" data-bs-toggle="popover" data-bs-placement="right"
+                                          data-bs-custom-class="custom-popover"
+                                          data-bs-title="User Aggrement"
+                                          data-bs-content="We do not send spam mails...">
+                                           ambani@gmail.com
+                                    </span>
+                                </td>
+                                <td><span class="inlineflex status"><span><div class="spinner-grow spinner-grow-sm text-success" role="status"></div></span>Active</span></td>
+                                <td><span class="inlineflex networth">19,000 USD cr</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary actionbtn"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Only Admin Can Perform Actions">
+                                            Action
+                                    </button>
+                                </td>
+                            </tr><tr>
+                                <td>15</td>
+                                <td>
+                                    <div class="tablerows">
+                                        <img class="user_icon" src="assets/images/Table images/jio.jpg" alt="">
+                                        <span class="imgtxt">Mukesh Ambani</span>
+                                    </div>
+
+                                    </td>
+                                <td>
+                                    <span class="inlineflex mail" data-bs-toggle="popover" data-bs-placement="right"
+                                          data-bs-custom-class="custom-popover"
+                                          data-bs-title="User Aggrement"
+                                          data-bs-content="We do not send spam mails...">
+                                           ambani@gmail.com
+                                    </span>
+                                </td>
+                                <td><span class="inlineflex status"><span><div class="spinner-grow spinner-grow-sm text-success" role="status"></div></span>Active</span></td>
+                                <td><span class="inlineflex networth">19,000 USD cr</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary actionbtn"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Only Admin Can Perform Actions">
+                                            Action
+                                    </button>
+                                </td>
+                            </tr><tr>
+                                <td>16</td>
+                                <td>
+                                    <div class="tablerows">
+                                        <img class="user_icon" src="assets/images/Table images/jio.jpg" alt="">
+                                        <span class="imgtxt">Mukesh Ambani</span>
+                                    </div>
+
+                                    </td>
+                                <td>
+                                    <span class="inlineflex mail" data-bs-toggle="popover" data-bs-placement="right"
+                                          data-bs-custom-class="custom-popover"
+                                          data-bs-title="User Aggrement"
+                                          data-bs-content="We do not send spam mails...">
+                                           ambani@gmail.com
+                                    </span>
+                                </td>
+                                <td><span class="inlineflex status"><span><div class="spinner-grow spinner-grow-sm text-success" role="status"></div></span>Active</span></td>
+                                <td><span class="inlineflex networth">19,000 USD cr</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary actionbtn"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Only Admin Can Perform Actions">
+                                            Action
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>  
+                    </table>
+</div>
+<!--progressbar-->
+<div class="container">
+  <h1 class="progressbartitle" id="scrollspyHeading2">Intraday Trading Is Safe and Relaiable</h1>
+  <div class="container" id="intra">
+    <h3>What is Intraday Trading?</h3>
+      <p>As the name would suggest, Intraday trading is a type of trading where both the buying and selling activity in stock (or an asset) is completed the same day i.e. in the same trading session.</p>
+  </div>
+  <div class="container" id="progressbar">
+  <div class="progressbarbody">
+    <div class="container barsr">
+        <p class="progressbarhead">Gold <i class="fa-solid fa-coin-vertical"></i></p>
+        <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                25%
+            </div>
+        </div>
+    </div>
+    <div class="container barsl">
+        <p class="progressbarhead">Mututal funds</p>
+        <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" aria-label="Info example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                50%
+            </div>
+        </div>
+    </div>
+    <div class="container barsr">
+        <strong class="progressbarhead">Intraday</strong>
+        <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" aria-label="Warning example" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                85%
+            </div>
+        </div>
+    </div>
+    <div class="container barsl">
+        <p class="progressbarhead">Option Trading</p>
+        <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" style="width: 93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">
+                93%
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--script for preLoader-->
+<script type="text/javascript">
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+        loader.style.display = "none";
+        $('#preloader').show(0).delay(100).hide(1000);
+    })
+</script>
+<!--script for table pagination-->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#sakthitable').DataTable();
+});
+</script>
+<!--script file for popovers-->
+<script type="text/javascript">
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+  const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
+<!--script for tooltips-->
+<script type="text/javascript">
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+
+</body>
+</html>
